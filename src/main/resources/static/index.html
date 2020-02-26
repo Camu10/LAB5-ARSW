@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Blueprints</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="/webjars/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/apimock.js"></script>
+    <link rel="stylesheet"
+          href="/webjars/bootstrap/4.1.2/css/bootstrap.min.css" />
+</head>
+<h1>Blueprints</h1>
+<body>
+
+<p>
+    Author: <input id="nombreUsuario" type="text" name="usuario">
+</p>
+    <button type="button" id="BGetBlueprints" onclick="Module.funcion()">Get blueprints.</button>
+
+<p>
+    Author name : <output id="salidaNombreUsuario"  type="text" >
+</p>
+
+<table id="tableBlueprints"  class="table table-bordered">
+    <thead>
+    <tr>
+        <th scope="col">Blueprint Name</th>
+        <th scope="col">Number of points</th>
+        <th scope="col">Button</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+    </tr>
+    </tbody>
+</table>
+ Total User Points: <output id="OutputPoints" type="text" >
+
+</body>
+</html>
