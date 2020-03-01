@@ -16,42 +16,28 @@
 <h1>Blueprints</h1>
 <body>
 
-<p>
-    Author: <input id="nombreUsuario" type="text" name="usuario">
-</p>
-    <button type="button" id="BGetBlueprints" onclick="Module.funcion()">Get blueprints.</button>
+    <p>
+        Author: <input id="nombreUsuario" type="text">
+    </p>
+        <button type="button" id="BGetBlueprints" onclick="Module.getBlueprintsAuthor(nombreUsuario.value)">Get blueprints.</button>
 
-<p>
-    Author name : <output id="salidaNombreUsuario"  type="text" >
-</p>
+    <div id="blueprintAuthor"><h2></h2></div>
 
-<table id="tableBlueprints"  class="table table-bordered">
-    <thead>
-    <tr>
-        <th scope="col">Blueprint Name</th>
-        <th scope="col">Number of points</th>
-        <th scope="col">Button</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-    </tr>
-    </tbody>
-</table>
- Total User Points: <output id="OutputPoints" type="text" >
+    <table id="tableBlueprints"  class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Blueprint Name</th>
+            <th scope="col">Number of points</th>
+            <th scope="col">Open</th>
+        </tr>
+        </thead>
+        <tbody>
+            <!-- Se generan datos con los js -->
+        </tbody>
+    </table>
+
+    <!-- Se generan datos con los js -->
+    <div id="sumBlueprint"><h3></h3></div>
 
 </body>
 </html>

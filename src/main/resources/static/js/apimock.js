@@ -1,4 +1,4 @@
-var apimock = (function () {
+apimock = (function () {
 
     var mockdata = [];
 
@@ -47,15 +47,17 @@ var apimock = (function () {
                     x: 20,
                     y: 35
                 },
-                {x:50,
-                y:35
+                {
+                    x:50,
+                    y:35
                 },
-                {x:99,
-                y:100
+                {
+                    x:99,
+                    y:100
                 }
             ]
         }
-    ]
+    ];
 
     mockdata['LexLuthor'] = [
         {
@@ -72,11 +74,11 @@ var apimock = (function () {
                 }
             ]
         }
-    ]
+    ];
 
     return {
         getBlueprintsByAuthor: function(author, callback) {
-            callback(null, mockdata[author]);
+            callback(mockdata[author]);
         },
 
         getBlueprintsByNameAndAuthor: function(name, author, callback) {
