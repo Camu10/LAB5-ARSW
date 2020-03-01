@@ -27,8 +27,12 @@ var Module=(function (){
     };
 
     var getBlueprintsAuthor = function(author) {
-        $("#blueprintAuthor > h2").text(author + "'s blueprints: ");
-        apimock.getBlueprintsByAuthor(author, _table);
+        if (author == "" || author == null) {
+            alert("Ingrese un valor correcto de nombre");
+        } else {
+            $("#blueprintAuthor > h2").text(author + "'s blueprints: ");
+            apimock.getBlueprintsByAuthor(author, _table);
+        }
     };
 
     return {
