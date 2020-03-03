@@ -12,6 +12,7 @@ var Module=(function (){
     };
 
     function _graficar(blueprints) {
+        $("#canvasTitle").text("Current blueprint: " + blueprints.name);
         var myCanvas = document.getElementById("myCanvas");
         var ctx = myCanvas.getContext("2d");
         ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);

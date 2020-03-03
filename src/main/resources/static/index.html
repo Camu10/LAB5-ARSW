@@ -15,34 +15,36 @@
 </head>
 <h1>Blueprints</h1>
 <body>
+    <div class="container">
+        <div style="float: left">
+            <p>
+                Author: <input id="nombreUsuario" type="text">
+                <button type="button" id="BGetBlueprints" onclick="Module.getBlueprintsAuthor(nombreUsuario.value)">Get blueprints.</button>
+            </p>
 
-    <p>
-        Author: <input id="nombreUsuario" type="text">
-        <button type="button" id="BGetBlueprints" onclick="Module.getBlueprintsAuthor(nombreUsuario.value)">Get blueprints.</button>
-    </p>
+            <!-- Se generan información con los js -->
+            <div id="blueprintAuthor"><h2></h2></div>
 
-    <!-- Se generan información con los js -->
-    <div id="blueprintAuthor"><h2></h2></div>
+            <table id="tableBlueprints"  class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">Blueprint Name</th>
+                    <th scope="col">Number of points</th>
+                    <th scope="col">Open</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <!-- Se generan datos con los js -->
+                </tbody>
+            </table>
+            <!-- Se generan información con los js -->
+            <div id="sumBlueprint"><h3></h3></div>
+        </div>
 
-    <table id="tableBlueprints"  class="table table-bordered">
-        <thead>
-        <tr>
-            <th scope="col">Blueprint Name</th>
-            <th scope="col">Number of points</th>
-            <th scope="col">Open</th>
-        </tr>
-        </thead>
-        <tbody>
-            <!-- Se generan datos con los js -->
-        </tbody>
-    </table>
-
-    <!-- Se generan información con los js -->
-    <div id="sumBlueprint"><h3></h3></div>
-
-     <div class="float: center">
-         <div id="canvasTitle"><h2></h2></div>
-         <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;"> </canvas>
-     </div>
+        <div style="float: right">
+         <h2 id="canvasTitle"></h2>
+         <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;"> </canvas>
+        </div>
+    </div>
 </body>
 </html>
