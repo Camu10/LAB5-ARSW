@@ -1,4 +1,4 @@
-
+var api=apiclient;
 var Module=(function (){
     var _author;
     function _map(list){
@@ -57,12 +57,12 @@ var Module=(function (){
             alert("Ingrese un valor correcto de nombre");
         } else {
             $("#blueprintAuthor > h2").text(author + "'s blueprints: ");
-            apimock.getBlueprintsByAuthor(author, _table);
+            api.getBlueprintsByAuthor(author, _table);
         }
     };
     function getBlueprintsAuthorAndName(author,name) {
         _setAuthorName(author);
-        apimock.getBlueprintsByNameAndAuthor(name,author,_graficar);
+        api.getBlueprintsByNameAndAuthor(name,author,_graficar);
     };
 
     return {
